@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-sclae=1" />
+    <title>-Example Border, Padding etc.-</title>
+    <style>
+      html * {
+        box-sizing: border-box;
+      }
+      .background-only {
+        background-color: #c9ecff;
+      }
+      .padding {
+        padding-top: 32px;
+        padding-right: 24px;
+        padding-bottom: 32px;
+        padding-left: 24px;
+        background-color: #e0ffff;
+      }
+      .border {
+        border: 10px solid #87cefa;
+        padding: 32px 24px;
+        background-color: #87ceeb;
+      }
+      .img {
+        background: url(img/WaterSurface2025.png);
+        width: 100%;
+        height: 100vh;
+        border: 10px solid #87cefa;
+        padding: 32px 24px;
+        background-color: #87ceeb;
+        font-size: 20px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background-only">スタイル適応無し</div>
+    <br />
+    <div class="padding">余白を上下32px、左右24px適応</div>
+    <br />
+    <div class="border">余白に加え、10pxの線を引いた</div>
+    <br />
+    <div class="img">余白＋10px線＋画像</div>
+  </body>
+</html>
